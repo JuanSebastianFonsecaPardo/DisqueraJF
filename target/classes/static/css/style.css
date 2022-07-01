@@ -1,0 +1,354 @@
+:root{
+    --Color1: #f5f5f5;
+    --Color2: #174675;
+    --Color3: #0d1f31;
+    --Color4: #123456;
+    --Color5: #c7c7c7;
+    --Color6: #333333;
+    --Color7: #3586ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body , html{
+    overflow-x: hidden;
+}
+
+.Barra{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--Color1);
+}
+
+.Barra-links{
+    display: flex;
+    align-items: center;
+}
+
+.Barra-links li{
+    margin: 0 30px;
+}
+
+.Barra-links a{
+    color: var(--Color1);
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/Imagen8.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-contenedor{
+    margin-bottom: 150px;
+    color: var(--Color1);
+    text-align: center;
+}
+
+.Linea{
+    width: 150px;
+    height: 4px;
+    background: var(--Color2);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-contenedor h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctb{
+    padding: 8px 15px;
+    background: var(--Color2);
+    border-radius: 30px;
+    color: var(--Color1);
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+/* Eventos */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.Titulo{
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--Color3);
+}
+
+.Tarjeta{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Tarjeta img{
+    width: 250px;
+    height: 300px;
+}
+
+.Tarjeta .Columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Evento .Tarjeta{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: var(--Color4);
+    margin: 20px auto;
+}
+
+.Tarjeta p{
+    color: var(--Color4); 
+    padding: 0px 40px;
+}
+
+.Evento .ctb{
+    margin-top: 30px;
+}
+
+.Tarjeta .Columna img{
+    width: 80%;
+}
+
+.Explorar{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Imagen2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Explorar-contenido{
+    width: 50%;
+    padding: 50px;
+    color: var(--Color1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Explorar-contenido h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.Explorar-Contenido .Linea{
+    margin: 50px;
+}
+
+.Explorar-Contenido p{
+    color: var(--Color5);
+}
+
+.Explorar-Contenido .ctb{
+    margin-top: 40px;
+}
+
+.Cancion .Columna .Tarjeta{
+    width: 50%;
+}
+
+.Contenido-columna{
+    width: 40%;
+}
+
+.Imagen-columna{
+    width: 60%;
+}
+
+.Cancion .Galeria-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.Galeria-imagenes img{
+    max-width: 300px;
+    margin: 10px;
+}
+
+.Contenido-columna h1{
+    font-size: 7vmin;
+    color: var(--Color4);
+}
+
+.Contenido-columna .Linea{
+    margin-left: px;
+
+}
+
+    footer{
+        position: relative;
+        width: 100%;
+        background: var(--Color7);
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    footer .Iconos-Social, .Menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    footer .Iconos-Social li, .Menu li{
+        list-style: none;
+    }
+
+    footer .Iconos-Social li a, footer .Menu li a{
+        font-size: 2em;
+        color: var(--Color1);
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    footer a{
+        color: var(--Color1);
+    }
+
+    .Iconos-Social a:hover{
+        transform: translateY(-10px);
+    }
+
+    footer .Menu li a{
+        font-size: 1.2em;
+        color: var(--Color1);
+        margin: 0 10px;
+        display: inline-block;
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    .Menu li{
+        color: var(--Color1);
+    }
+
+    .Menu a:hover{
+        opacity: 1;;
+    }
+
+    footer p{
+        color: var(--Color1);
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    footer .Ola{
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../img/ImagenF.png);
+        background-size: 1000px 100px   ;
+    }
+
+    footer .Ola#Ola1{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateOla_1 4s linear infinite;
+    }
+
+    footer .Ola#Ola2{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateOla_2 4s linear infinite;
+    }
+
+    footer .Ola#Ola3{
+        z-index: 998;
+        opacity: 0.2;
+        bottom: 0;
+        animation: animateOla_3 4s linear infinite;
+    }
+
+    footer .Ola#Ola4{
+        z-index: 997;
+        opacity: 0.1;
+        bottom: 10px;
+        animation: animateOla_4 4s linear infinite;
+    }
+
+    @keyframes animateOla_1{
+        0%{
+            background-position-x: 1000px;
+        }
+        100%{
+            background-position-x: 0px;
+        }
+    }
+
+    @keyframes animateOla_2{
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: 1000px;
+        }
+    }
+
+    @keyframes animateOla_3{
+        0%{
+            background-position-x: 1500px;
+        }
+        100%{
+            background-position-x: 0px;
+        }
+    }
+
+    @keyframes animateOla_4{
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: 1500px;
+        }
+    }
