@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisqueraJF</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+    
+    <!--Barra de navegacion-->
+    <nav class="Barra">
+        <h1 class="Logo">DISQUERAJF</h1>
+        <ul class="Barra-links">
+            <li><a th:href="@{../index}">Inicio</a></li>
+            <li><a th:href="@{/album/listar}" >Album</a></li>
+            <li><a th:href="@{/cancion/listar}">Cancion</a></li>
+            <li><a th:href="@{/artista/listar}">Artista</a></li>
+            <li><a th:href="@{/disquera/listar}">Disquera</a></li>
+            <li><a th:href="@{/genero/listar}" class="ctb">Genero</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-contenedor">
+            <h2>Que esperas para registrar?</h2>
+            <div class="Linea"></div>
+            <h1>DISQUERA</h1>
+            <a th:href="@{disquera/listar}" class="ctb">Comenzar</a>
+        </div>
+    </header>
+    <!--Eventos-->
+    <section class="Evento">
+        <div class="Titulo">
+            <h1>Servicios</h1>
+            <div class="Linea"></div>
+        </div>
+        <div class="Tarjeta">
+            <div class="Columna">
+                <img th:src="@{../img/Imagen3.jpg}" alt="">
+                <h4>Album</h4>
+                <p>Un álbum es una colección de grabaciones sonoras publicadas en disco compacto (CD), vinilo, cinta de audio o cualquier otro medio.</p>
+                <a th:href="@{album/listar}" class="ctb">Registrar</a>
+            </div>
+            <div class="Columna">
+                <img th:src="@{../img/Imagen4.jpg}" alt="">
+                <h4>Artista</h4>
+                <p>Un cantante o cantor es un artista que produce con su voz melodías, normalmente utilizando palabras que suelen rimar. También suele acompañarse de música instrumental.</p>
+                <a th:href="@{artista/listar}" class="ctb">Registrar</a>
+            </div>
+        </div>
+    </section>
+    <section class="Explorar">
+        <div class="Explorar-contenido">
+            <h1>GENERO</h1>
+            <div class="Linea"></div>
+            <p>Un género musical es una categoría que reúne composiciones musicales que comparten distintos criterios de afinidad, tales como su función (música de danza, música religiosa, música de cine...), su instrumentación (música vocal, música instrumental, música electrónica...), el contexto social en que es producida o el contenido de su texto.</p>
+            <a th:href="@{genero/listar}" class="ctb">Registrar</a>
+        </div>
+    </section>
+    <section class="Cancion">
+        <div class="Tarjeta">
+            <div class="Columna Contenido-columna">
+                <h1>CANCION</h1>
+                <div class="Linea"></div>
+                <p>Una canción es una composición musical para la voz humana, con letra y comúnmente acompañada por instrumentos musicales.</p>
+                <a th:href="@{cancion/listar}" class="ctb">Registrar</a>
+            </div>
+            <div class="Columna Imagen-columna">
+                <div class="Galeria-imagenes">
+                    <img th:src="@{../img/Imagen5.jpg}" alt="">
+                    <img th:src="@{../img/Imagen6.jpg}" alt="">
+                    <img th:src="@{../img/Imagen7.jpg}" alt="">
+                    <img th:src="@{../img/Imagen1.jpg}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="Olas">
+            <div class="Ola" id="Ola1"></div>
+        </div>
+        <ul class="Iconos-Social">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+        <ul class="Menu">
+            <li><a th:href="@{index}">Inicio</a></li>
+            <li><a th:href="@{album/listar}" >Album</a></li>
+            <li><a th:href="@{cancion/listar}">Cancion</a></li>
+            <li><a th:href="@{artista/listar}">Artista</a></li>
+            <li><a th:href="@{disquera/listar}">Disquera</a></li>
+            <li><a th:href="@{genero/listar}" class="ctb">Genero</a></li>
+        </ul>
+        <p>2022 | Juan Sebastian Fonseca Pardo</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
